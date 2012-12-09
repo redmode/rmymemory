@@ -1,17 +1,17 @@
-\name{rMyMemory-package}
-\alias{rMyMemory-package}
-\alias{rMyMemory}
+\name{rmymemory-package}
+\alias{rmymemory-package}
+\alias{rmymemory}
 \docType{package}
 \title{
-rMyMemory: Provides machine translation from/to multiple languages
+rmymemory: Provides machine translation from/to multiple languages
 }
 \description{
-rMyMemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
+rmymemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
 ~~ A concise (1-5 lines) description of the package ~~
 }
 \details{
 \tabular{ll}{
-Package: \tab rMyMemory\cr
+Package: \tab rmymemory\cr
 Type: \tab Package\cr
 Version: \tab 0.0.1\cr
 Date: \tab 2012-12-09\cr
@@ -22,7 +22,7 @@ Built: \tab R 2.15.1; ; 2012-12-09 19:27:08 UTC; unix\cr
 
 Index:
 \preformatted{
-rMyMemory-package       rMyMemory: Provides machine translation from/to
+rmymemory-package       rmymemory: Provides machine translation from/to
                         multiple languages
 }
 ~~ An overview of how to use the package, including the most important functions ~~
@@ -33,14 +33,12 @@ Alexander Gedranovich <gedranovich@gmail.com>
 Maintainer: Alexander Gedranovich <gedranovich@gmail.com>
 }
 \references{
-http://mymemory.translated.net
+\url{http://mymemory.translated.net}
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation ~~
-~~ directory ~~
-\keyword{ package }
+
+\keyword{ utilities }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+\code{\link[rmymemory:translate]{translate}}
 }
 \examples{
 # Default translation from English to Russian
