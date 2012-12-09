@@ -1,0 +1,1 @@
+rmymemory package uses <http://mymemory.translated.net> translation API to provide simple interface to this service

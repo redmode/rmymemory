@@ -7,7 +7,6 @@ rmymemory: Provides machine translation from/to multiple languages
 }
 \description{
 rmymemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
-~~ A concise (1-5 lines) description of the package ~~
 }
 \details{
 \tabular{ll}{
@@ -25,7 +24,7 @@ Index:
 rmymemory-package       rmymemory: Provides machine translation from/to
                         multiple languages
 }
-~~ An overview of how to use the package, including the most important functions ~~
+%~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
 Alexander Gedranovich <gedranovich@gmail.com>

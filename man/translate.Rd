@@ -13,18 +13,18 @@ translate(txt, from = "en", to = "ru")
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{txt}{
--- Text to translate
+Text to translate
 }
   \item{from}{
--- ISO2 code of origin language, e.g. "en" or "de"
+ISO2 code of origin language, e.g. "en" or "de"
 }
   \item{to}{
--- ISO2 code of target language
+ISO2 code of target language
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -40,16 +40,16 @@ Function returns single string with translation.
 \author{
 Alexander Gedranovich <gedranovich@gmail.com>
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \keyword{ utilities }
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 # Default translation from English to Russian
 translate("Hello")
