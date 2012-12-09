@@ -7,3 +7,4 @@ Author: Alexander Gedranovich <gedranovich@gmail.com>
 Maintainer: Alexander Gedranovich <gedranovich@gmail.com>
 Description: rMyMemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
 License: MIT
+Depends: R (>= 2.15.0), RCurl, RJSONIO
