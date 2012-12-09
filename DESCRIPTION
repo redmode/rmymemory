@@ -1,9 +1,9 @@
 Package: rMyMemory
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: Wrapper for <http://mymemory.translated.net> translation service
+Version: 0.0.1
 Date: 2012-12-09
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Alexander Gedranovich <gedranovich@gmail.com>
+Maintainer: Alexander Gedranovich <gedranovich@gmail.com>
+Description: rMyMemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
+License: MIT

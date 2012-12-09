@@ -3,31 +3,28 @@
 \alias{rMyMemory}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+rMyMemory: Provides machine translation from/to multiple languages
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+rMyMemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
 }
 \details{
 \tabular{ll}{
 Package: \tab rMyMemory\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 0.0.1\cr
 Date: \tab 2012-12-09\cr
-License: \tab What license is it under?\cr
+License: \tab MIT\cr
 }
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-Who wrote it
+Author: Alexander Gedranovich <gedranovich@gmail.com>
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Alexander Gedranovich <gedranovich@gmail.com>
 }
 \references{
-~~ Literature or other references for background information ~~
+http://mymemory.translated.net
 }
 ~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
 ~~ documentation directory ~~
@@ -37,5 +34,12 @@ Maintainer: Who to complain to <yourfault@somewhere.net>
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+translate("Hello")
+[1] "Привет"
+
+translate("Hello", to="de")
+[1] "Hallo"
+
+translate("Hello", to="es")
+[1] "¡Hola"
 }
