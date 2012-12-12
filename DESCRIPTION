@@ -3,7 +3,7 @@ Type: Package
 Title: Wrapper for <http://mymemory.translated.net> translation service
 Version: 0.0.1
 Date: 2012-12-09
-Author: Alexander Gedranovich <gedranovich@gmail.com>
+Author: Alexander Gedranovich
 Maintainer: Alexander Gedranovich <gedranovich@gmail.com>
 Description: rmymemory uses <http://mymemory.translated.net> translation API to provide simple interface to this service
 License: MIT

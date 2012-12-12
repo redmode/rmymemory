@@ -48,4 +48,11 @@ translate("Hello", to="de")
 
 # Translation from German to Spanish
 translate("Hallo", from="de", to="es")
+
+# Sentence translation
+translate("To be or not to be?")
+
+# Multiple texts translation
+txt <- c("Hello", "world", "To be or not to be?")
+sapply(txt, translate, to="es")
 }

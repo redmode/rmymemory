@@ -1,8 +1,21 @@
+#
+#
+#
+langFROM <- "en"
+langTO   <- "ru"
 
 #
 #
 #
-translate <- function(txt, from="en", to="ru"){
+setpair <- function(from=langFROM, to=langTO){
+  langFROM <- from
+  langTO   <- to
+}
+
+#
+#
+#
+translate <- function(txt, from=langFROM, to=langTO){
   
   url <- paste("http://mymemory.translated.net/api/get?q=", txt, "&langpair=", from, "|", to, sep="")
   url <- gsub(" ", "%20", url)

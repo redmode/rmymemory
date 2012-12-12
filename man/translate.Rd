@@ -8,7 +8,7 @@ Simple machine translation of text
 Function uses MyMemory Translation API to find first available machine translation of given phrase. If machine translation is not available function returns first human translation with maximum quality score.
 }
 \usage{
-translate(txt, from = "en", to = "ru")
+translate(txt, from = langFROM, to = langTO)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -47,9 +47,9 @@ Alexander Gedranovich <gedranovich@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \keyword{ utilities }
-%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
+\seealso{
+\code{\link[rmymemory:setpair]{setpair}}
+}
 \examples{
 # Default translation from English to Russian
 translate("Hello")
@@ -59,4 +59,11 @@ translate("Hello", to="de")
 
 # Translation from German to Spanish
 translate("Hallo", from="de", to="es")
+
+# Sentence translation
+translate("To be or not to be?")
+
+# Multiple texts translation
+txt <- c("Hello", "world", "To be or not to be?")
+sapply(txt, translate, to="es")
 }
