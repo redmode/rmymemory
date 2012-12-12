@@ -9,11 +9,16 @@ translate <- function(txt, from="en", to="ru"){
   
   json <- fromJSON(getURL(url))
   
-  df <- as.data.frame(do.call(rbind, json$matches))
-  tr <- unlist(df$translation[df$"created-by"=="MT!"])
-  if(is.null(tr)){
-    tr <- df$translation[[1]]
+  if(json$responseStatus == 403){
+    tr <- txt
+  }
+  else{
+    df <- as.data.frame(do.call(rbind, json$matches))
+    tr <- unlist(df$translation[df$"created-by"=="MT!"])
+    if(is.null(tr)){
+      tr <- df$translation[[1]]
+    }
   }
   
-  return (tr)
+  return (as.character(tr))
 }
