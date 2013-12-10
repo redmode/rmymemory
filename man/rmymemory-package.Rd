@@ -12,11 +12,11 @@ rmymemory uses <http://mymemory.translated.net> translation API to provide simpl
 \tabular{ll}{
 Package: \tab rmymemory\cr
 Type: \tab Package\cr
-Version: \tab 0.0.1\cr
-Date: \tab 2012-12-09\cr
+Version: \tab 0.0.2\cr
+Date: \tab 2013-12-10\cr
 License: \tab MIT\cr
-Depends: \tab R (>= 2.15.0), RCurl, RJSONIO\cr
-Built: \tab R 2.15.1; ; 2012-12-09 19:27:08 UTC; unix\cr
+Depends: \tab R (>= 3.0.0), RCurl, RJSONIO\cr
+Built: \tab R 3.0.2; ; 2013-12-10 19:27:08 UTC; unix\cr
 }
 
 Index:
@@ -52,7 +52,7 @@ translate("Hallo", from="de", to="es")
 # Sentence translation
 translate("To be or not to be?")
 
-# Multiple texts translation
+# Batch translation
 txt <- c("Hello", "world", "To be or not to be?")
 sapply(txt, translate, to="es")
 }

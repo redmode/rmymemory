@@ -1,21 +1,22 @@
 #
+# Environment for internal variables
 #
-#
-langFROM <- "en"
-langTO   <- "ru"
+rmem.env <- new.env()
+rmem.env$langFROM <- "en"
+rmem.env$langTO   <- "ru"
 
 #
+# Sets default translation pair
 #
-#
-setpair <- function(from=langFROM, to=langTO){
-  langFROM <- from
-  langTO   <- to
+setpair <- function(from, to){
+  rmem.env$langFROM <- from
+  rmem.env$langTO   <- to
 }
 
 #
+# Translates phrase using "MT!' translator, i.e. Google Translate
 #
-#
-translate <- function(txt, from=langFROM, to=langTO){
+translate <- function(txt, from=rmem.env$langFROM, to=rmem.env$langTO){
   
   url <- paste("http://mymemory.translated.net/api/get?q=", txt, "&langpair=", from, "|", to, sep="")
   url <- gsub(" ", "%20", url)

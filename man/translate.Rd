@@ -1,6 +1,5 @@
 \name{translate}
 \alias{translate}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Simple machine translation of text
 }
@@ -10,7 +9,6 @@ Function uses MyMemory Translation API to find first available machine translati
 \usage{
 translate(txt, from = langFROM, to = langTO)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{txt}{
 Text to translate
@@ -26,15 +24,9 @@ ISO2 code of target language
 %%  ~~ If necessary, more details than the description above ~~
 %}
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
 Function returns single string with translation.
 }
 \references{
-%% ~put references to the literature/web site here ~
 \url{http://mymemory.translated.net/}
 }
 \author{
@@ -63,7 +55,7 @@ translate("Hallo", from="de", to="es")
 # Sentence translation
 translate("To be or not to be?")
 
-# Multiple texts translation
+# Batch translation
 txt <- c("Hello", "world", "To be or not to be?")
 sapply(txt, translate, to="es")
 }
